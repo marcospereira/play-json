@@ -9,9 +9,9 @@ import org.specs2.mutable._
 
 object JsonJodaValidSpec extends Specification {
 
-  "JSON reads" should {
+"JSON reads" should {
     "validate Dates" in {
-      val dj = new org.joda.time.DateTime()
+       val dj = new org.joda.time.DateTime()
       val dfj = org.joda.time.format.ISODateTimeFormat.dateTime
       val ddj = org.joda.time.DateTime.parse(dfj.print(dj), dfj)
 
